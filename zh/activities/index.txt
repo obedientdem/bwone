@@ -1,0 +1,33 @@
+1:"$Sreact.fragment"
+2:"/bwpone/_next/static/chunks/0umf92h1sb77c.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+b:I[97367,["$2"],"OutletBoundary"]
+c:"$Sreact.suspense"
+e:"ViewportBoundary"
+f:I[97367,["$2"],"$e"]
+11:"MetadataBoundary"
+12:I[97367,["$2"],"$11"]
+14:I[68027,[],"default",1]
+:HL["/bwpone/_next/static/chunks/3pydfgkomp-aj.css","style"]
+5:X
+9:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$La",[["$","script","script-0",{"src":"/bwpone/_next/static/chunks/2e0wrabv3xibq.js","async":true,"nonce":"$undefined"}]],["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],"p":false,"v":null}}]]
+8:[["children",{"s":"activities","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$5"},"c":"$Q9"}]]
+6:[["children",{"s":{"n":"locale","t":"d","k":"zh","s":[]},"h":66064,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/bwpone/_next/static/chunks/3pydfgkomp-aj.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/bwpone/_next/static/chunks/3hjtyjmdzwrjj.js","async":true,"nonce":"$undefined"}]],"$L7"]}],"p":false,"v":null},"c":"$Q8"}]]
+0:{"P":null,"c":["","zh","activities",""],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$5"},"c":"$Q6"},"h":{"r":["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$c",null,{"name":"Next.Metadata","children":"$L13"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$14",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"DjbYnhlnLEOEisNCx9xkF"}
+15:"/bwpone/_next/static/chunks/3hjtyjmdzwrjj.js"
+16:I[73761,["$15"],"Header"]
+17:"/bwpone/_next/static/chunks/3u_encx04omn4.js"
+18:I[92370,["$15","$17"],"default"]
+19:I[73761,["$15"],"Footer"]
+1a:"/bwpone/_next/static/chunks/2e0wrabv3xibq.js"
+1b:I[22016,["$15","$1a"],""]
+1c:"ActivitiesExplorer"
+1d:I[64340,["$15","$1a"],"$1c"]
+:HL["/bwpone/images/imagined-worlds.png","image"]
+5:C
+7:["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":["$","link",null,{"rel":"preload","as":"image","href":"/bwpone/images/imagined-worlds.png"}]}],["$","body",null,{"children":[["$","a",null,{"className":"skip-link","href":"#main-content","children":"跳到主要内容"}],["$","$L16",null,{"locale":"zh"}],["$","main",null,{"id":"main-content","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L18",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L19",null,{"locale":"zh"}]]}]]}]
+a:[["$","div",null,{"className":"page-intro wrap","children":[["$","div",null,{"className":"intro-rule","children":[["$","span",null,{"className":"eyebrow","children":"COME PLAY A PART"}],["$","span",null,{"className":"edition-label","children":["黑白测评组"," / ","ACTIVITIES"]}]]}],["$","h1",null,{"children":"好游戏，好相遇。"}],["$","p",null,{"children":"参与一次试玩，发现一款新作，或者把一份游戏礼物带回家。先把规则读清楚，再一起出发。"}]]}],["$","div",null,{"className":"wrap","children":[["$","div",null,{"className":"list-feature","children":[["$","$L1b",null,{"href":"/zh/activities/forest-playtest","aria-label":"寻找愿意慢下来的森林旅人","children":["$","div",null,{"className":"game-art art-forest ","children":[["$","svg",null,{"className":"art-image","viewBox":"0 0 836 470.5","preserveAspectRatio":"xMidYMid slice","role":"img","aria-label":"森林试玩活动原创场景示意","children":["$","image",null,{"href":"/bwpone/images/imagined-worlds.png","width":"1672","height":"941","x":0,"y":0}]}],"$undefined",["$","span",null,{"className":"art-disclaimer","children":"CONCEPT / SAMPLE"}]]}]}],["$","div",null,{"className":"list-feature-copy","children":[["$","span",null,{"className":"eyebrow","children":["FEATURED PLAYTEST / ","示例专题"]}],["$","h2",null,{"children":"寻找愿意慢下来的森林旅人"}],["$","p",null,{"children":"《森间来信》体验官招募示例：从一次试玩，走近游戏诞生的过程。"}],["$","$L1b",null,{"className":"text-link","href":"/zh/activities/forest-playtest","children":["查看活动说明",["$","svg",null,{"className":"icon ","style":"$undefined","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","aria-hidden":"true","children":["$","path",null,{"d":"M4 12h15M13 5l7 7-7 7"}]}]]}]]}]]}],["$","section",null,{"className":"catalog-section","children":["$","$L1d",null,{"locale":"zh"}]}]]}]]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+13:[["$","title","0",{"children":"黑白测评组 · 预览样刊"}],["$","meta","1",{"name":"description","content":"黑白独立游戏杂志：认真体验，自由表达。当前文章、评分与活动均为示例。"}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","meta","3",{"name":"color-scheme","content":"light"}]]

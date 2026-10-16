@@ -1,0 +1,12 @@
+{
+  "version": "P1-pages-v1",
+  "date": "2026-10-16",
+  "node": "24.19.0",
+  "public_pages": 48,
+  "internal_links_checked": 1742,
+  "resource_references_checked": 796,
+  "browser_qa": "not performed",
+  "repository": "obedientdem/bwpone",
+  "base_path": "/bwpone",
+  "exported_references_checked": 2464
+}

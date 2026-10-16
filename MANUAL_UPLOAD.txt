@@ -1,0 +1,18 @@
+黑白测评组 P1：bwpone 专用完整包
+
+目标仓库：https://github.com/obedientdem/bwpone
+发布地址：https://obedientdem.github.io/bwpone/zh/
+
+1. 在 GitHub 创建名为 bwpone 的 Public 仓库。若仓库没有 main 分支，创建时勾选 Add a README file。
+2. 在 GitHub Desktop：File > Clone repository > URL，填目标仓库地址，克隆到新的本地目录。
+3. 在 Desktop 选择 bwpone，点击 Repository > Show in Explorer，打开刚克隆的仓库文件夹。
+4. 将本压缩包解压后的全部文件和文件夹复制进该仓库文件夹，允许覆盖 README。根目录直接看到 index.html、package.json、src、zh、en，不要多套一层文件夹；保留克隆仓库自带的 .git。
+5. 回到 Desktop，Current branch 选择 main，Changes 应显示大量新增文件。Summary 填 发布完整P1，点击 Commit to main，然后点击 Push origin。
+6. 到 GitHub 网页查看 bwpone，确认根目录已经显示 index.html、src、zh、en，而不是仅有 README 或 .gitattributes。
+7. Settings > Pages：Source 选择 Deploy from a branch，Branch 选择 main，Folder 选择 / (root)，Save。
+8. 等待 Actions 中 pages build and deployment 成功后打开上面的发布地址。
+
+说明：本包已经构建好完整交互静态网页，同时包含完整源码，无需先安装 Node.js 或运行 npm。
+后续修改源码时执行 npm run stage:pages 重新生成展示文件，再 Commit 和 Push。
+本地直接双击 index.html 不代表完整运行；图片和脚本路径专为 GitHub Pages 的 /bwpone/ 配置。
+本轮已执行静态构建和链接检查；未执行真实浏览器、移动端视觉和读屏验收。账号、后台、数据库、报名、真实开奖尚未实现。

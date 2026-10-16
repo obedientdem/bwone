@@ -1,0 +1,85 @@
+import type { Bilingual, Localized } from "../i18n/index.ts";
+
+export type Art = "forest" | "stairs" | "tram" | "coast";
+export type Genre = "adventure" | "puzzle" | "narrative" | "exploration";
+export type Platform = "PC" | "Switch" | "PlayStation";
+export type Section = { heading: string; paragraphs: string[]; quote?: string };
+export type ArticleCopy = { title: string; summary: string; pros: string[]; cons: string[]; sections: Section[] };
+export type Review = {
+  id: string; slug: string; game: Bilingual<string>; art: Art;
+  genre: Genre; platforms: Platform[]; score: number; playerScore: number; playerCount: number;
+  views30d: number; viewsAll: number; publishedAt: string; minutes: number; version: string;
+  copy: Localized<ArticleCopy>;
+};
+
+export const genres: Record<Genre, Bilingual<string>> = {
+  adventure: { zh: "冒险", en: "Adventure" }, puzzle: { zh: "解谜", en: "Puzzle" },
+  narrative: { zh: "叙事", en: "Narrative" }, exploration: { zh: "探索", en: "Exploration" }
+};
+
+const forestZh: ArticleCopy = {
+  title: "不必急着抵达，森林自有回声",
+  summary: "一封寄给慢行者的来信。让探索的意义，重新落在每一步之间。",
+  pros: ["路径与环境叙事互相回应", "自然声景带来安静而具体的陪伴", "折返后仍能发现新的细节"],
+  cons: ["少数岔路的视觉提示偏弱", "中段谜题变化稍显保守"],
+  sections: [
+    { heading: "先学会听，再决定往哪里走", paragraphs: ["这是一篇虚构游戏的示例测评，用于展示黑白测评组的阅读结构、评分与图文样式。游戏、体验描述和分数均不对应真实产品。", "《森间来信》的示例设定，是一段没有倒计时的林间旅行。主角背着一只旧邮包，沿着荒废的石阶走进森林。没有任务箭头催你赶路，只有水声、风向与远处偶尔响起的铃声，把一条路慢慢交到手里。"], quote: "有些游戏奖励抵达，有些游戏让你重新在意出发。" },
+    { heading: "最好的路标，藏在世界里面", paragraphs: ["这份设计最动人的地方，在于解谜并非挡在探索之前的门锁。你先注意到树根缠绕的方向，随后才意识到它连接着一座古老的机关；之前只是风景的石拱，在另一个角度看过去，忽然成了路径的一部分。", "森林的色彩保持明亮，废墟却没有被处理成干净的布景。苔藓覆盖的边沿、日光里浮动的微粒，让每一次停顿都有值得看的东西。环境声音也承担着导航工作，耳机里的远近变化，比地图上的标记更贴近旅程。"] },
+    { heading: "留白也有它的边界", paragraphs: ["安静的探索依赖清楚的环境语言。少数分岔把可行路线与背景画得太相近，第一次经过时容易错过。中段连续使用相同的机关思路，也让节奏出现了短暂的停滞。", "它适合愿意观察、允许自己绕路的玩家。如果你期待密集战斗和持续升级的反馈，这段林间旅行可能过于轻柔；如果你想暂时把任务清单放在一边，它倒很懂得留下空间。"] }
+  ]
+};
+
+const forestEn: ArticleCopy = {
+  title: "Take the long way. The forest will answer.",
+  summary: "A letter to the unhurried player, finding the pleasure of exploration in the space between destinations.",
+  pros: ["Routes and environmental storytelling work together", "An intimate, carefully layered natural soundscape", "Returning to an old path reveals fresh details"],
+  cons: ["Some junctions need clearer visual cues", "The middle stretch repeats familiar puzzle ideas"],
+  sections: [
+    { heading: "Listen before choosing a direction", paragraphs: ["This is a fictional review demonstrating our reading layout, images and scoring. The game, impressions and scores are illustrative and do not describe a real product.", "In the imagined world of Letters from the Woods, a traveller carrying an old mailbag follows worn steps into a forest. Water, wind and a distant bell take the place of a persistent waypoint. The journey leaves room to notice where you are."], quote: "Some games reward arriving. Others make you care about setting out again." },
+    { heading: "The world is its own wayfinder", paragraphs: ["Puzzles grow out of observation. The direction of a root hints at an old mechanism; a stone arch, seen from a different angle, becomes a route rather than a backdrop. Exploration and understanding move together.", "Moss, shifting light and the depth of the soundscape give pauses a purpose. A familiar path is not simply a corridor to cross again: it is a place that becomes legible as you learn its language."] },
+    { heading: "Even quiet needs a little guidance", paragraphs: ["A few junctions blur the distinction between scenery and a usable path. Repeated mechanisms briefly slow the middle stretch. These are modest but meaningful limits in a game that depends on visual clarity.", "This imagined adventure is for players who enjoy observation and detours. Its appeal lies in giving exploration enough room to become personal."] }
+  ]
+};
+
+function sampleCopy(title: string, summary: string, focus: string): ArticleCopy {
+  return {
+    title, summary,
+    pros: [focus, "清晰且一致的美术表达", "让细节服务于游玩节奏"],
+    cons: ["部分交互提示仍有改善空间", "后半程变化可以更加充分"],
+    sections: [
+      { heading: "从一个小小的念头出发", paragraphs: ["本文为虚构示例稿件，游戏、剧情、体验与评分均用于页面演示，不是对真实游戏的推荐。", `${summary} 这份示例把注意力放在一个明确的设计念头上：${focus}。玩家通过观察、尝试和回访，把最初看似零散的线索重新连接起来。`] },
+      { heading: "让美术成为玩法的一部分", paragraphs: ["颜色、声音和空间关系需要共同传达信息。值得肯定的地方，是画面中的细节能够成为理解关卡的线索，而不仅仅提供装饰。走过同一段路时，观察的角度发生变化，原本熟悉的环境也就显出了另一层意义。", "节奏的调整同样重要。一次发现之后留出一点余裕，比连续堆叠机关更能让人记住体验。示例也展示了这种安排可能遇到的困难：提示不足会让探索变成试错，重复过多又会削弱第一次发现的惊喜。"] },
+      { heading: "适合怎样的玩家", paragraphs: ["如果你喜欢在有限的规则中寻找新的关系，也愿意给环境叙事一点耐心，可以把这样的体验视作一种值得期待的方向。期待密集对抗或深度数值构筑的玩家，则需要调整自己的游玩预期。", "黑白点与分数是对同一段体验的不同切面。示例中的保留意见，也应当与优点一起被读到。"] }
+    ]
+  };
+}
+
+export const reviews: Review[] = [
+  { id: "review-forest", slug: "letters-from-the-woods", game: { zh: "森间来信", en: "Letters from the Woods" }, art: "forest", genre: "adventure", platforms: ["PC", "Switch"], score: 8.5, playerScore: 8, playerCount: 24, views30d: 1840, viewsAll: 5200, publishedAt: "2026-10-15T04:00:00Z", minutes: 8, version: "示例版本 / Sample build", copy: { zh: forestZh, en: forestEn } },
+  { id: "review-stairs", slug: "city-of-reflections", game: { zh: "倒影之城", en: "City of Reflections" }, art: "stairs", genre: "puzzle", platforms: ["PC", "PlayStation"], score: 9, playerScore: 8.5, playerCount: 18, views30d: 1280, viewsAll: 8100, publishedAt: "2026-10-12T04:00:00Z", minutes: 6, version: "示例版本 / Sample build", copy: { zh: sampleCopy("换个角度，世界就有了出口", "阶梯通向天空，倒影才是下一步的答案。一场关于观看方式的温柔挑战。", "把视角变化转化为可理解的空间规则") } },
+  { id: "review-tram", slug: "last-tram-home", game: { zh: "末班山海", en: "The Last Tram Home" }, art: "tram", genre: "narrative", platforms: ["PC", "Switch"], score: 8, playerScore: 8.5, playerCount: 31, views30d: 2450, viewsAll: 3900, publishedAt: "2026-10-10T04:00:00Z", minutes: 7, version: "示例版本 / Sample build", copy: { zh: sampleCopy("最后一班电车，驶向谁的夏天", "把故事藏进窗外的风景，让一次普通的归途拥有被记住的理由。", "通过沿途对话与风景变化推进叙事") } },
+  { id: "review-coast", slug: "beyond-the-tide", game: { zh: "潮汐以外", en: "Beyond the Tide" }, art: "coast", genre: "exploration", platforms: ["PC"], score: 8.5, playerScore: 7.5, playerCount: 12, views30d: 960, viewsAll: 15000, publishedAt: "2026-10-08T04:00:00Z", minutes: 5, version: "示例版本 / Sample build", copy: { zh: sampleCopy("海退去之后，留下了什么", "在潮水的往复之间，寻找被时间改写的小岛。", "用潮汐变化组织可探索区域") } }
+];
+
+export type News = { id: string; slug: string; art: Art; category: "release" | "update" | "industry"; publishedAt: string; copy: Localized<{ title: string; summary: string; sections: Section[] }> };
+export const newsCategories = { release: { zh: "新游上线", en: "New releases" }, update: { zh: "版本更新", en: "Updates" }, industry: { zh: "业界动态", en: "Industry" } };
+export const news: News[] = [
+  { id: "news-forest", slug: "a-new-path", art: "forest", category: "release", publishedAt: "2026-10-16T03:00:00Z", copy: { zh: { title: "从一条林间小路开始：示例体验版专题", summary: "体验版应该留下什么？从一段虚构冒险，看看如何把第一个小时讲清楚。", sections: [{ heading: "一个用于阅读演示的专题", paragraphs: ["这是一条示例资讯，不代表任何真实游戏的发布消息。场景与配图为原创示意。", "本文展示新游资讯所需的标题、摘要、时间、分类和正文结构。正式上线后，这些内容将由编辑后台维护，并标注真实的来源及发布日期。"] }] }, en: { title: "A small path into a bigger world: a sample demo feature", summary: "What should a demo leave behind? An imagined adventure helps us explore the first hour.", sections: [{ heading: "An illustrative editorial feature", paragraphs: ["This is sample news, not an announcement about a real game. The scenes and artwork are original illustrations.", "The page demonstrates a headline, summary, category, publication date and article body. Real reporting will include verified sources and publication details."] }] } } },
+  { id: "news-stairs", slug: "readable-worlds", art: "stairs", category: "update", publishedAt: "2026-10-14T03:00:00Z", copy: { zh: { title: "一次小更新，怎样让迷路变成探索", summary: "从视线引导到交互反馈，讨论关卡可读性的几个细节。", sections: [{ heading: "更新观察：示例栏目", paragraphs: ["这是一条虚构的更新观察，用于验证资讯分类与缺失语言稿的回退。它不描述真实补丁或开发者承诺。", "相同的环境可以通过声音、明暗和物体排列传达不同的信息。编辑的工作，是把这些变化与玩家真正能感受到的体验连接起来。"] }] } } },
+  { id: "news-tram", slug: "small-games-large-voices", art: "tram", category: "industry", publishedAt: "2026-10-11T03:00:00Z", copy: { zh: { title: "小体量游戏，也值得被认真讨论", summary: "把注意力还给具体的设计，让不同尺度的创作都能找到自己的读者。", sections: [{ heading: "观察与表达", paragraphs: ["本文为示例编辑观点，不包含真实市场数据、商业合作或人物引语。", "游戏的体量和预算不是唯一的讨论入口。一个清楚的机制、一段有分寸的叙事、一个值得停留的场景，都可以成为一次认真讨论的开始。"] }] } } }
+];
+
+export type Activity = {
+  id: string; slug: string; kind: "recruitment" | "giveaway"; art: Art;
+  status: "open" | "upcoming" | "closed" | "drawn";
+  title: Bilingual<string>; summary: Bilingual<string>;
+  startsAt: string; endsAt: string; drawAt?: string; places: number;
+};
+export const activities: Activity[] = [
+  { id: "activity-forest", slug: "forest-playtest", kind: "recruitment", art: "forest", status: "open", title: { zh: "寻找愿意慢下来的森林旅人", en: "Calling the unhurried forest traveller" }, summary: { zh: "《森间来信》体验官招募示例：从一次试玩，走近游戏诞生的过程。", en: "A sample playtest for Letters from the Woods: get closer to the process behind a game." }, startsAt: "2026-10-14T04:00:00Z", endsAt: "2026-10-24T12:00:00Z", places: 20 },
+  { id: "activity-coast", slug: "tide-giveaway", kind: "giveaway", art: "coast", status: "open", title: { zh: "把一小片海，留给你", en: "A little piece of the sea, for you" }, summary: { zh: "《潮汐以外》游戏礼物抽奖示例。规则、时间与奖品，一次说清。", en: "A sample Beyond the Tide giveaway, with its rules, timing and prizes clearly laid out." }, startsAt: "2026-10-15T04:00:00Z", endsAt: "2026-10-25T12:00:00Z", drawAt: "2026-10-26T04:00:00Z", places: 5 },
+  { id: "activity-stairs", slug: "reflections-playtest", kind: "recruitment", art: "stairs", status: "upcoming", title: { zh: "换一个角度，一起发现出口", en: "Find a new way through, together" }, summary: { zh: "空间解谜体验招募示例，尚未开始。", en: "An upcoming sample spatial-puzzle playtest." }, startsAt: "2026-11-01T04:00:00Z", endsAt: "2026-11-10T12:00:00Z", places: 12 },
+  { id: "activity-tram", slug: "tram-results", kind: "giveaway", art: "tram", status: "drawn", title: { zh: "末班电车，已有了同行者", en: "The last tram has found its company" }, summary: { zh: "已开奖状态与脱敏结果的页面示例。", en: "A sample drawn state with anonymised results." }, startsAt: "2026-10-01T04:00:00Z", endsAt: "2026-10-10T12:00:00Z", drawAt: "2026-10-12T04:00:00Z", places: 3 }
+];
+
+export const DEMO_DATE = "2026-10-16";

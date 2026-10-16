@@ -1,0 +1,37 @@
+1:"$Sreact.fragment"
+2:"/bwpone/_next/static/chunks/0umf92h1sb77c.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+9:"/bwpone/_next/static/chunks/3hjtyjmdzwrjj.js"
+a:I[73761,["$9"],"Header"]
+b:"/bwpone/_next/static/chunks/3u_encx04omn4.js"
+c:I[92370,["$9","$b"],"default"]
+d:I[73761,["$9"],"Footer"]
+14:I[22016,["$9"],""]
+15:I[97367,["$2"],"OutletBoundary"]
+16:"$Sreact.suspense"
+19:"ViewportBoundary"
+1a:I[97367,["$2"],"$19"]
+1b:"MetadataBoundary"
+1c:I[97367,["$2"],"$1b"]
+:HL["/bwpone/_next/static/chunks/3pydfgkomp-aj.css","style"]
+:HL["/bwpone/images/imagined-worlds.png","image"]
+6:X
+6:C
+7:X
+13:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","div",null,{"className":"page-intro wrap","children":[["$","div",null,{"className":"intro-rule","children":[["$","span",null,{"className":"eyebrow","children":"INFORMATION & TRANSPARENCY"}],["$","span",null,{"className":"edition-label","children":["黑白测评组"," / ","INFORMATION"]}]]}],["$","h1",null,{"children":"联系与运营信息"}],["$","p",null,{"children":"清楚的说明，是建立信任的起点。"}]]}],["$","section",null,{"className":"wrap legal-reading","children":[["$","p",null,{"className":"content-notice","children":"预览说明：本页展示正式站点的信息入口，文件尚未完成运营及法律审核，不构成正式协议或活动承诺。"}],["$","div",null,{"className":"article-body","children":[["$","h2",null,{"children":"正式上线前，将在这里说明什么？"}],["$","p",null,{"children":"运营主体、真实联系邮箱、商务与版权联络方式，以及必要的法定披露。由于运营资料尚未确认，本预览不提供虚构邮箱、地址、团队姓名或不可用的提交表单。"}],["$","h2",null,{"children":"本样刊的边界"}],["$","p",null,{"children":"页面用于设计、信息架构与阅读体验审查。示例评分、阅读量、活动状态、中奖标识与稿件不是实际业务记录。真实账号、后台审核、数据库、自动开奖与发奖将在后续阶段逐项实现和验收。"}]]}],["$","$L14",null,{"className":"button button-dark","href":"/zh","children":["回到样刊",["$","svg",null,{"className":"icon ","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","aria-hidden":"true","children":["$","path",null,{"d":"M4 12h15M13 5l7 7-7 7"}]}]]}]]}]],null,["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]]}],"p":"$@18","v":null,"s":"$7"}}]]
+11:[["children",{"s":{"n":"slug","t":"d","k":"contact","s":[]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}],"p":"$@12","v":"$6","s":"$7"},"c":"$Q13"}]]
+f:[["children",{"s":"legal","h":131168,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}],"p":"$@10","v":"$6","s":"$7"},"c":"$Q11"}]]
+8:[["children",{"s":{"n":"locale","t":"d","k":"zh","s":[]},"h":196720,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/bwpone/_next/static/chunks/3pydfgkomp-aj.css","precedence":"next"}],["$","script","script-0",{"src":"/bwpone/_next/static/chunks/3hjtyjmdzwrjj.js","async":true}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":["$","link",null,{"rel":"preload","as":"image","href":"/bwpone/images/imagined-worlds.png"}]}],["$","body",null,{"children":[["$","a",null,{"className":"skip-link","href":"#main-content","children":"跳到主要内容"}],["$","$La",null,{"locale":"zh"}],["$","main",null,{"id":"main-content","children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[["$","$Lc",null,{}],[]]}]}],["$","$Ld",null,{"locale":"zh"}]]}]]}]]}],"p":"$@e","v":null,"s":"$7"},"c":"$Qf"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]]}],"p":"$@5","v":"$6","s":"$7"},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$16",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"黑白测评组 · 预览样刊"}],["$","meta","1",{"name":"description","content":"黑白独立游戏杂志：认真体验，自由表达。当前文章、评分与活动均为示例。"}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","meta","3",{"name":"color-scheme","content":"light"}]]}]}],null]}],null]}],"p":"$@1d","v":null,"s":"$7"}},"a":"$@1e","u":"$@1f","b":"DjbYnhlnLEOEisNCx9xkF"}
+17:null
+7:300
+1f:true
+7:C
+1e:0
+12:"$undefined"
+10:"$undefined"
+e:"$undefined"
+5:"$undefined"
+1d:"$undefined"
+18:"$undefined"
